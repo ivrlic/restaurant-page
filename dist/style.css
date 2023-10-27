@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+body {
+    font-family: 'Luxurious Roman', serif;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    background-image: url("./img/restaurant-back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #333333ce;
+    color: #fff;
+    font-size: 0.875rem;
+    text-align: center;
+    letter-spacing: 8px;
+    width: 100%;
+    padding: 0.25rem;
+}
+
+footer p {
+   margin: 0; 
+}
+
+header {
+    background-color: #333333ce;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    letter-spacing: 20px;
+    margin: 4rem 0 2rem;
+    text-decoration: underline;
+}
+
+.cont {
+    padding: 0 2rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;  
+}
+
+.tab {
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: #666;
+    color: #fff;
+    margin-right: 2.5rem;
+    border-bottom: 2px solid #000;
+    border-radius: 0 5px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.tab:last-of-type {
+    margin-right: 0;
+}
+
+.tab:hover,
+.tab:focus {
+    color: rgba(255, 255, 0, 0.782);
+    background-color: #525252e4;
+}
+
+.tab:active {
+    border-top: 1px solid rgba(255, 255, 0, 0.782);
+    border-right: 1px solid rgba(255, 255, 0, 0.782);
+    scale: 0.97;
+}
+
+.tab-chosen {
+    border-top: 1px solid rgba(255, 255, 0, 0.782);
+    border-right: 1px solid rgba(255, 255, 0, 0.782);
+    margin-top: 0.5rem;
+    background-color: #444444cc;
+    transition: background-color 1s;
+}
+
+.tab-content-cont {
+    margin: 16rem auto 3rem;
+    border: 2px solid #666;
+    border-radius: 0 15px;
+    background-color: #444444cc;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.125rem;
+}
+
+.home-cont {
+    width: 300px;
+    padding: 2rem ;
+}
+
+.menu-cont {
+    max-width: 800px;
+    padding: 1rem 2rem;
+}
+
+.dish-div {
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 0 15px;
+    color: #000;
+}
+
+.dish-div:hover,
+.dish-div:focus {
+    background-color: #000;
+    color: #eee;
+    scale: 1.4;
+    transition: all 1.5s;
+}
+
+.dish-div:active {
+    scale: 1.35;
+    rotate: 10deg;
+    transition: rotate 0.5s;
+}
+
+.dish-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contact-cont {
+    max-width: 400px;
+    padding: 2rem 0;
+}
+
+.contact-cont div:first-child {
+    margin-bottom: 1rem;
+}
+
+.contact-cont a {
+    color: #eee;
+}
+
+.contact-cont a:hover,
+.contact-cont a:focus {
+    color: rgba(255, 255, 0, 0.782);
+}
+
+.contact-cont button {
+    font-family: 'Luxurious Roman', serif;
+    position: relative;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 7px 30px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #000;
+    border-radius: 0 5px;
+    transition: background-color 0.5s, color 0.5s; 
+}
+
+.contact-cont button:hover,
+.contact-cont button:focus {
+    color: rgba(255, 255, 0, 0.782);
+    background-color: #525252e4;
+}
+
+.contact-cont button:active {
+    margin-top: 31px;
+    border-top: 1px solid rgba(255, 255, 0, 0.782);
+    border-right: 1px solid rgba(255, 255, 0, 0.782);
+    scale: 0.97;
+}
+
+.animate {
+    animation: buttonClick 0.5s linear;
+}
+
+
+@keyframes buttonClick {
+    0% {
+        border-top: 1px solid rgba(255, 255, 0, 0.782);
+        padding-right: 20px;
+        right: 0;
+    }
+    15% {
+        border-left: 1px solid rgba(255, 255, 0, 0.782);
+        padding-left: 10px;
+        padding-right: 15px;
+        right: 0.5rem;
+    }
+    30% {
+        border-left: 1px solid rgba(255, 255, 0, 0.782);
+
+        right: 0rem;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    100% {
+        border-left: 1px solid rgba(255, 255, 0, 0.782);
+        right: -35rem;
+    }
+}
